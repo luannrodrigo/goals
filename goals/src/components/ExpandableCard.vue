@@ -33,7 +33,8 @@ function toggleExpand() {
     class="block rounded-md border border-gray-300 p-4 shadow-sm sm:p-6 dark:border-gray-700 dark:bg-gray-800 cursor-pointer"
   >
     <div class="flex items-center">
-      <img src="../assets/icon.svg" alt="Icon" class="h-8 w-8 mr-4" />
+      <img src="../assets/Icon.svg"  alt="Icon" class="h-8 w-8 mr-4" />
+
       <div>
         <h3 class="text-base font-medium text-gray-900 dark:text-gray-100">{{ title }}</h3>
         <p class="text-xs text-gray-700 dark:text-gray-400">{{ subTitle }}</p>

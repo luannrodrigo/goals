@@ -59,4 +59,20 @@ export class GoalsService {
       },
     });
   }
+
+  async addThermalSensation(goalId: string, record: { thermalSensation: number; date: string }, userId: string) {
+    const goal = await this.findOne(goalId, userId);
+
+    if (!goal) {
+      throw new NotFoundException(`Goal with ID ${goalId} not found`);
+    }
+
+    return this.prisma.thermalSensation.create({
+      data: {
+        goalId,
+        thermalSensation: record.thermalSensation,
+        date: record.date,
+      },
+    });
+  }
 }

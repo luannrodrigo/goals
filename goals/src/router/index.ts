@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'register-goal',
       component: RegisterGoalView,
     },
+    {
+      path: '/goal-counter/:id',
+      name: 'goal-counter',
+      component: () => import('@/views/GoalCounterView.vue'),
+    },
   ],
 })
 

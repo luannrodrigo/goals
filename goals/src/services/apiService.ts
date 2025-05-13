@@ -56,6 +56,14 @@ export const GoalService = {
   ) => api.patch(`/goals/${id}`, updates),
 
   deleteGoal: (id: string) => api.delete(`/goals/${id}`),
+
+  addThermalSensation: (record: {
+    goalId: string
+    thermalSensation: number
+    date: string
+  }) => {
+    return api.post(`/goals/${record.goalId}/thermal-sensations`, record)
+  },
 }
 
 export default api

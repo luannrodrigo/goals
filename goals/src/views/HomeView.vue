@@ -15,6 +15,7 @@
         <Card
           v-for="goal in goals"
           :key="goal.id"
+          :id="goal.id"
           :title="goal.title"
           :description="goal.description"
           additionalText="Dead line"
@@ -86,7 +87,11 @@ if (!localStorage.getItem('goals:token')) {
 }
 
 function navigateToRegisterGoals() {
-  router.push('/register-goals')
+  router.push('/register-goal')
+}
+
+function navigateToGoalCounter() {
+  router.push('/goal-counter')
 }
 
 onMounted(() => {

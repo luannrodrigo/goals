@@ -48,4 +48,13 @@ export class GoalsController {
   remove(@Param('id') id: string, @CurrentUser() user: User) {
     return this.goalsService.remove(id, user.id);
   }
+
+  @Post(':id/thermal-sensations')
+  addThermalSensation(
+    @Param('id') id: string,
+    @Body() record: { thermalSensation: number; date: string },
+    @CurrentUser() user: User,
+  ) {
+    return this.goalsService.addThermalSensation(id, record, user.id);
+  }
 }

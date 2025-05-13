@@ -35,6 +35,17 @@ model Goal {
   updatedAt        DateTime @updatedAt
   userId           String
   user             User     @relation(fields: [userId], references: [id])
+  thermalSensations ThermalSensation[]
 
   @@map("goals")
+}
+
+model ThermalSensation {
+  id               String   @id @default(uuid())
+  thermalSensation Int
+  date             DateTime @default(now())
+  goalId           String
+  goal             Goal     @relation(fields: [goalId], references: [id])
+
+  @@map("thermal_sensations")
 }

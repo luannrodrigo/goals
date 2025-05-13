@@ -40,19 +40,7 @@
             class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
           />
         </div>
-        <div>
-          <label for="satisfaction" class="block text-sm font-medium">Sensação Térmica</label>
-          <input
-            id="satisfaction"
-            type="number"
-            v-model="satisfaction"
-            min="0"
-            max="5"
-            required
-            class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
-            placeholder="0 (Muito Insatisfeito) a 5 (Muito Satisfeito)"
-          />
-        </div>
+
         <button
           type="submit"
           class="w-full px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
