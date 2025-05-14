@@ -15,7 +15,7 @@ const router = useRouter()
 async function handleSignUp() {
   try {
     const response = await AuthService.register(name.value, email.value, password.value)
-    console.log('Usuário cadastrado com sucesso:', response.data)
+
     // Redirecionar para a página de login
     router.push('/signin')
   } catch (error) {

@@ -82,7 +82,7 @@ async function handleRegisterGoal() {
       thermalSensation: satisfaction.value,
     }
     const response = await GoalService.createGoal(goal)
-    console.log('Meta cadastrada com sucesso:', response.data)
+
     router.push('/') // Redirecionar para a página inicial após salvar a meta
   } catch (error) {
     console.error('Erro ao cadastrar meta:', error)

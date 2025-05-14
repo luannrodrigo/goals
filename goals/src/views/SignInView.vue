@@ -14,7 +14,7 @@ const router = useRouter()
 async function handleSignIn() {
   try {
     const response = await AuthService.login(email.value, password.value)
-    console.log('Usuário autenticado com sucesso:', response.data)
+
     localStorage.setItem('goals:token', response.data.access_token) // Salvar o token no localStorage
     router.push('/') // Redirecionar para a página inicial
   } catch (error) {

@@ -64,7 +64,7 @@ const goals = ref<{ id: string; title: string; description: string; deadline: st
 async function fetchGoals() {
   try {
     const response = await GoalService.getGoals()
-    console.log('Metas:', response.data)
+
     goals.value = response.data.map(
       (goal: { id: string; title: string; description: string; deadline: string }) => ({
         ...goal,
