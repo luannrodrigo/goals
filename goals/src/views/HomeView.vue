@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center justify-center">
       <div class="flex items-center justify-between w-full mb-8">
         <span class="text-2xl font-bold">Não Desista</span>
-        <img src="../assets/logo.svg" alt="Logo" class="h-16" />
+        <img src="../assets/logo-new.svg" alt="Logo" class="h-16" />
       </div>
 
       <div class="w-full">

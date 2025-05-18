@@ -28,7 +28,7 @@ async function handleSignIn() {
   <div class="flex items-center justify-center min-h-screen">
     <div class="w-full max-w-md p-8 space-y-6 rounded-lg shadow-md">
       <div class="flex items-center justify-center mb-6">
-        <img src="../assets/logo.svg" alt="Logo" class="h-16" />
+        <img src="../assets/logo-new.svg" alt="Logo" class="h-16" />
       </div>
       <h2 class="text-2xl font-bold text-center">Bem-vindo de volta</h2>
       <form @submit.prevent="handleSignIn" class="space-y-4">
