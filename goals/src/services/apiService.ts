@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'http://localhost:3001', // Substitua pelo URL base da sua API
+  baseURL: 'http://34.207.112.18:3001', // API URL in production
 })
 
 // Adiciona o token de autenticação em todas as requisições
